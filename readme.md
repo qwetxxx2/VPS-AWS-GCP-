@@ -1,5 +1,5 @@
 CloudHost — VPS и облачные платформы (AWS, GCP)
-Live-сайт: https://qwetxxx2.github.io/vps-cloud-site/
+Live-сайт: [https://qwetxxx2.github.io/vps-cloud-site/](https://qwetxxx2.github.io/VPS-AWS-GCP-/)
 
 Автор
 Саков Даниил Сергеевич, группа ПМо-141
