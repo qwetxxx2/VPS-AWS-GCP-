@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сравнение AWS, GCP и VPS — CloudHost</title>
+  <meta name="description" content="Сравнительная таблица Amazon Web Services, Google Cloud и классического VPS: оплата, порог входа, масштабирование и рекомендации по выбору.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/chota.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Основная навигация">
+    <div class="nav-left">
+      <a class="brand" href="index.html">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+        Cloud<span class="brand__accent">Host</span>
+      </a>
+    </div>
+    <button class="nav__toggle button clear" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Открыть меню">&#9776;</button>
+    <div class="main-menu" id="site-menu">
+      <div class="tabs">
+        <a href="index.html">Главная</a>
+        <a href="vps.html">VPS</a>
+        <a href="cloud.html">Облако</a>
+        <a href="aws.html">AWS</a>
+        <a href="gcp.html">GCP</a>
+        <a href="compare.html">Сравнение</a>
+        <a href="blog.html">Блог</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container page">
+  <div class="row page__layout">
+
+    <section class="col-8 page__content">
+      <h1>AWS, GCP и VPS: что выбрать</h1>
+      <p class="page__lead">Универсального ответа нет: всё зависит от бюджета, нагрузки и компетенций команды. Ниже — сравнение по ключевым критериям.</p>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption>Сравнение облачных платформ AWS, Google Cloud и классического VPS</caption>
+          <thead>
+            <tr>
+              <th scope="col">Критерий</th>
+              <th scope="col">AWS</th>
+              <th scope="col">GCP</th>
+              <th scope="col">VPS CloudHost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Модель оплаты</th>
+              <td>За потребление (pay-as-you-go)</td>
+              <td>Посекундная тарификация</td>
+              <td>Фиксированная, в месяц</td>
+            </tr>
+            <tr>
+              <th scope="row">Бесплатный период</th>
+              <td>Free Tier 12 месяцев</td>
+              <td>$300 на 90 дней</td>
+              <td>Нет, но есть скидка 30%</td>
+            </tr>
+            <tr>
+              <th scope="row">Порог входа</th>
+              <td>Высокий: десятки сервисов и настроек</td>
+              <td>Средний</td>
+              <td>Минимальный</td>
+            </tr>
+            <tr>
+              <th scope="row">Оплата в рублях и русскоязычная поддержка</th>
+              <td>Нет</td>
+              <td>Нет</td>
+              <td>Да</td>
+            </tr>
+            <tr>
+              <th scope="row">Автоматическое масштабирование</th>
+              <td>Да, Auto Scaling Groups</td>
+              <td>Да, Managed Instance Groups</td>
+              <td>Вручную сменой тарифа</td>
+            </tr>
+            <tr>
+              <th scope="row">Root-доступ</th>
+              <td>Да</td>
+              <td>Да</td>
+              <td>Да</td>
+            </tr>
+            <tr>
+              <th scope="row">География дата-центров</th>
+              <td>30+ регионов по миру</td>
+              <td>40+ регионов по миру</td>
+              <td>2 площадки в России</td>
+            </tr>
+            <tr>
+              <th scope="row">Лучший выбор для</th>
+              <td>Enterprise и стартапов</td>
+              <td>Аналитики и ML-проектов</td>
+              <td>Сайтов и небольших сервисов</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Краткие рекомендации</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card__body">
+            <h3>AWS подойдёт, если…</h3>
+            <ul>
+              <li>проект растёт непредсказуемо и нужны автомасштабирование;</li>
+              <li>требуются сотни готовых сервисов и интеграций;</li>
+              <li>команда готова изучать документацию и следить за расходами.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <h3>GCP подойдёт, если…</h3>
+            <ul>
+              <li>работаете с большими данными и машинным обучением;</li>
+              <li>нужен Kubernetes «из коробки»;</li>
+              <li>нравится посекундная оплата без переплат.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <h3>VPS подойдёт, если…</h3>
+            <ul>
+              <li>нужен сайт, блог или небольшой магазин;</li>
+              <li>важна предсказуемая цена в рублях каждый месяц;</li>
+              <li>хочется простоты: один сервер, root и никаких сложных консолей.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="col-4 page__sidebar" aria-label="Дополнительная информация">
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <h3>Дайджест CloudHost</h3>
+          <p>Раз в неделю — новости облачных платформ, обзоры тарифов и практические руководства.</p>
+          <form action="#" method="post">
+            <label for="subscribe-email">Ваш email</label>
+            <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
+            <button class="button primary" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <span class="tag">Акция</span>
+          <h3>−30% на первый месяц</h3>
+          <p>Промокод <strong>CLOUD30</strong> при заказе любого тарифа VPS до конца месяца.</p>
+          <a class="button primary" href="vps.html">Выбрать тариф</a>
+        </div>
+      </div>
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <h3>Популярные статьи</h3>
+          <ul class="sidebar__list">
+            <li><a href="blog.html">VPS против выделенного сервера</a></li>
+            <li><a href="blog.html">Auto Scaling в AWS: как это работает</a></li>
+            <li><a href="blog.html">Kubernetes в Google Cloud</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h3>CloudHost</h3>
+        <p>Виртуальные серверы и облачная инфраструктура для бизнеса с 2018 года. Собственное оборудование в дата-центрах уровня Tier III.</p>
+      </div>
+      <div class="footer__col">
+        <h3>Контакты</h3>
+        <ul>
+          <li>Тел.: <a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+          <li>Email: <a href="mailto:info@cloudhost.ru">info@cloudhost.ru</a></li>
+          <li>Москва, ул. Дата-центровая, 1</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Разделы</h3>
+        <ul>
+          <li><a href="vps.html">Тарифы VPS</a></li>
+          <li><a href="cloud.html">Облачные платформы</a></li>
+          <li><a href="faq.html">Вопросы и ответы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; 2026 CloudHost. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Cloud Platform — обзор платформы — CloudHost</title>
+  <meta name="description" content="Обзор Google Cloud Platform: сервисы Compute Engine, Cloud Storage, BigQuery, GKE и кому подходит это облако.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/chota.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Основная навигация">
+    <div class="nav-left">
+      <a class="brand" href="index.html">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+        Cloud<span class="brand__accent">Host</span>
+      </a>
+    </div>
+    <button class="nav__toggle button clear" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Открыть меню">&#9776;</button>
+    <div class="main-menu" id="site-menu">
+      <div class="tabs">
+        <a href="index.html">Главная</a>
+        <a href="vps.html">VPS</a>
+        <a href="cloud.html">Облако</a>
+        <a href="aws.html">AWS</a>
+        <a href="gcp.html">GCP</a>
+        <a href="compare.html">Сравнение</a>
+        <a href="blog.html">Блог</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container page">
+  <div class="row page__layout">
+
+    <section class="col-8 page__content">
+      <h1>Google Cloud Platform: данные и аналитика</h1>
+      <p class="page__lead">Google Cloud Platform (GCP) — облако от Google, работающее на той же инфраструктуре, что Поиск, YouTube и Gmail. Платформа считается номером два или три на мировом рынке и особенно сильна в аналитике данных и машинном обучении.</p>
+
+      <h2>Основные сервисы</h2>
+      <ul>
+        <li><strong>Compute Engine</strong> — виртуальные машины с посекундной тарификацией и автоматическими скидками за постоянную нагрузку.</li>
+        <li><strong>Cloud Storage</strong> — объектное хранилище с классами доступа: от «горячих» данных до архивов, которые стоят в разы дешевле.</li>
+        <li><strong>BigQuery</strong> — облачное хранилище для анализа терабайтов данных: запросы выполняются за секунды без настройки серверов.</li>
+        <li><strong>GKE (Google Kubernetes Engine)</strong> — управляемый Kubernetes. Не секрет, что Kubernetes придумали именно в Google.</li>
+        <li><strong>Cloud Functions</strong> — бессерверные функции, запускаемые по событию: обработка загрузок, уведомления, интеграции.</li>
+      </ul>
+
+      <h2>Инфраструктура и инженеры</h2>
+      <p>Дата-центры Google соединены собственной глобальной сетью, поэтому трафик между регионами идёт по каналам провайдера, а не через публичный интернет. Это даёт низкие задержки для пользователей в любой стране.</p>
+
+      <figure class="figure">
+        <picture>
+          <source type="image/webp" srcset="img/team-1280.webp">
+          <img src="img/team-1280.jpg" alt="Команда инженеров настраивает облачную инфраструктуру" width="1280" height="720" loading="lazy">
+        </picture>
+        <figcaption>Инженеры настраивают кластер Kubernetes в облаке</figcaption>
+      </figure>
+
+      <h2>Кому подходит Google Cloud</h2>
+      <p>GCP выбирают команды, работающие с большими данными: аналитические панели, рекомендательные системы, модели машинного обучения. Новым клиентам платформа начисляет $300 на 90 дней — этого хватает, чтобы изучить основные сервисы без вложений.</p>
+      <p>Если же задача проще — поднять сайт или небольшой сервис — разумнее начать с обычного <a href="vps.html">VPS-тарифа</a>, а в облако переезжать по мере роста.</p>
+    </section>
+
+    <aside class="col-4 page__sidebar" aria-label="Дополнительная информация">
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <h3>Дайджест CloudHost</h3>
+          <p>Раз в неделю — новости облачных платформ, обзоры тарифов и практические руководства.</p>
+          <form action="#" method="post">
+            <label for="subscribe-email">Ваш email</label>
+            <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
+            <button class="button primary" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <span class="tag">Акция</span>
+          <h3>−30% на первый месяц</h3>
+          <p>Промокод <strong>CLOUD30</strong> при заказе любого тарифа VPS до конца месяца.</p>
+          <a class="button primary" href="vps.html">Выбрать тариф</a>
+        </div>
+      </div>
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <h3>Популярные статьи</h3>
+          <ul class="sidebar__list">
+            <li><a href="blog.html">VPS против выделенного сервера</a></li>
+            <li><a href="blog.html">Auto Scaling в AWS: как это работает</a></li>
+            <li><a href="blog.html">Kubernetes в Google Cloud</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h3>CloudHost</h3>
+        <p>Виртуальные серверы и облачная инфраструктура для бизнеса с 2018 года. Собственное оборудование в дата-центрах уровня Tier III.</p>
+      </div>
+      <div class="footer__col">
+        <h3>Контакты</h3>
+        <ul>
+          <li>Тел.: <a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+          <li>Email: <a href="mailto:info@cloudhost.ru">info@cloudhost.ru</a></li>
+          <li>Москва, ул. Дата-центровая, 1</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Разделы</h3>
+        <ul>
+          <li><a href="vps.html">Тарифы VPS</a></li>
+          <li><a href="cloud.html">Облачные платформы</a></li>
+          <li><a href="faq.html">Вопросы и ответы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; 2026 CloudHost. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

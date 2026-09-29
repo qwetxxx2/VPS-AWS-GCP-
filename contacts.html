@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — CloudHost</title>
+  <meta name="description" content="Свяжитесь с CloudHost: форма обратной связи, телефон, email, адрес офиса и карта проезда.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/chota.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Основная навигация">
+    <div class="nav-left">
+      <a class="brand" href="index.html">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+        Cloud<span class="brand__accent">Host</span>
+      </a>
+    </div>
+    <button class="nav__toggle button clear" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Открыть меню">&#9776;</button>
+    <div class="main-menu" id="site-menu">
+      <div class="tabs">
+        <a href="index.html">Главная</a>
+        <a href="vps.html">VPS</a>
+        <a href="cloud.html">Облако</a>
+        <a href="aws.html">AWS</a>
+        <a href="gcp.html">GCP</a>
+        <a href="compare.html">Сравнение</a>
+        <a href="blog.html">Блог</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container page">
+  <div class="row page__layout">
+
+    <section class="col-8 page__content">
+      <h1>Свяжитесь с нами</h1>
+      <p class="page__lead">Остались вопросы по тарифам или хотите заказать сервер? Заполните форму — ответим в течение рабочего дня.</p>
+
+      <form action="#" method="post" class="contact-form">
+        <div class="row">
+          <div class="col">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+          </div>
+          <div class="col">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+        </div>
+        <label for="topic">Тема обращения</label>
+        <select id="topic" name="topic">
+          <option>Тарифы VPS</option>
+          <option>Облачные платформы (AWS, GCP)</option>
+          <option>Техническая поддержка</option>
+          <option>Сотрудничество</option>
+          <option>Другое</option>
+        </select>
+        <label for="message">Сообщение</label>
+        <textarea id="message" name="message" rows="5" placeholder="Опишите ваш вопрос" required></textarea>
+        <p class="contact-form__check">
+          <input type="checkbox" id="consent" name="consent" required>
+          <label for="consent">Согласен(на) на обработку персональных данных</label>
+        </p>
+        <button class="button primary" type="submit">Отправить сообщение</button>
+      </form>
+
+      <h2>Реквизиты и режим работы</h2>
+      <ul>
+        <li>Телефон: <a href="tel:+79000000000">+7 (900) 000-00-00</a> — ежедневно с 9:00 до 21:00 (МСК).</li>
+        <li>Email: <a href="mailto:info@cloudhost.ru">info@cloudhost.ru</a> — ответ в течение рабочего дня.</li>
+        <li>Поддержка: <a href="mailto:support@cloudhost.ru">support@cloudhost.ru</a> — круглосуточно.</li>
+        <li>Адрес офиса: Москва, ул. Дата-центровая, 1, офис 305.</li>
+        <li>ООО «КлаудХост», ИНН 7700000000, ОГРН 1187700000000.</li>
+      </ul>
+
+      <h2>Мы на карте</h2>
+      <div class="map-embed">
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=37.55%2C55.70%2C37.68%2C55.80&amp;layer=mapnik" title="Офис CloudHost на карте Москвы" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <aside class="col-4 page__sidebar" aria-label="Дополнительная информация">
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <h3>Дайджест CloudHost</h3>
+          <p>Раз в неделю — новости облачных платформ, обзоры тарифов и практические руководства.</p>
+          <form action="#" method="post">
+            <label for="subscribe-email">Ваш email</label>
+            <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
+            <button class="button primary" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <span class="tag">Акция</span>
+          <h3>−30% на первый месяц</h3>
+          <p>Промокод <strong>CLOUD30</strong> при заказе любого тарифа VPS до конца месяца.</p>
+          <a class="button primary" href="vps.html">Выбрать тариф</a>
+        </div>
+      </div>
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <h3>Быстрые ссылки</h3>
+          <ul class="sidebar__list">
+            <li><a href="vps.html">Тарифы VPS</a></li>
+            <li><a href="faq.html">Частые вопросы</a></li>
+            <li><a href="about.html">О компании</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h3>CloudHost</h3>
+        <p>Виртуальные серверы и облачная инфраструктура для бизнеса с 2018 года. Собственное оборудование в дата-центрах уровня Tier III.</p>
+      </div>
+      <div class="footer__col">
+        <h3>Контакты</h3>
+        <ul>
+          <li>Тел.: <a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+          <li>Email: <a href="mailto:info@cloudhost.ru">info@cloudhost.ru</a></li>
+          <li>Москва, ул. Дата-центровая, 1</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Разделы</h3>
+        <ul>
+          <li><a href="vps.html">Тарифы VPS</a></li>
+          <li><a href="cloud.html">Облачные платформы</a></li>
+          <li><a href="faq.html">Вопросы и ответы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; 2026 CloudHost. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

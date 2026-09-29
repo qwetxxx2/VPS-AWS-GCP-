@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudHost — VPS и облачные платформы AWS, GCP</title>
+  <meta name="description" content="CloudHost — виртуальные серверы на KVM с NVMe-дисками и обзор ведущих облачных платформ: Amazon Web Services и Google Cloud.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/chota.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Основная навигация">
+    <div class="nav-left">
+      <a class="brand" href="index.html">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+        Cloud<span class="brand__accent">Host</span>
+      </a>
+    </div>
+    <button class="nav__toggle ☀️button clear" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Открыть меню">&#9776;</button>
+    <div class="main-menu" id="site-menu">
+      <div class="tabs">
+        <a href="index.html">Главная</a>
+        <a href="vps.html">VPS</a>
+        <a href="cloud.html">Облако</a>
+        <a href="aws.html">AWS</a>
+        <a href="gcp.html">GCP</a>
+        <a href="compare.html">Сравнение</a>
+        <a href="blog.html">Блог</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <span class="hero__badge">NVMe · Защита от DDoS · SLA 99,9%</span>
+<h1 class="hero__title">Облачная инфраструктура и <span class="text-gradient">VPS-серверы</span></h1>
+    <p class="hero__text">Виртуальные серверы на KVM с NVMe-дисками, защитой от DDoS и моментальным масштабированием. А для больших проектов — подробные обзоры облаков AWS и Google Cloud.</p>
+    <a class="button primary" href="vps.html">Выбрать тариф VPS</a>
+    <a class="button outline" href="compare.html">Сравнить облака</a>
+  </div>
+</section>
+
+<main class="container page">
+  <div class="row page__layout">
+
+    <section class="col-8 page__content">
+      <h1>VPS и облачные платформы — просто о сложном</h1>
+      <p class="page__lead">CloudHost — информационный проект о виртуальных серверах и лидирующих облачных провайдерах: Amazon Web Services и Google Cloud Platform. Разбираем технологии языком, понятным даже новичку.</p>
+
+      <h2>Что такое VPS</h2>
+      <p>VPS (Virtual Private Server) — виртуальный выделенный сервер. Физический сервер делится гипервизором на несколько изолированных виртуальных машин, каждая из которых получает гарантированные ресурсы: процессор, оперативную память, дисковое пространство и собственную операционную систему с полным root-доступом.</p>
+      <p>В отличие от виртуального хостинга, где вы делите ресурсы с сотнями «соседей», VPS даёт предсказуемую производительность: чужие проекты не смогут замедлить ваш сайт или базу данных.</p>
+
+      <figure class="figure">
+        <img src="img/datacenter-800.webp"
+             srcset="img/datacenter-480.webp 480w, img/datacenter-800.webp 800w, img/datacenter-1280.webp 1280w"
+             sizes="(min-width: 992px) 700px, (min-width: 768px) 92vw, 100vw"
+             alt="Ряды серверных стоек в дата-центре" width="800" height="450" loading="lazy">
+        <figcaption>Оборудование CloudHost размещено в дата-центрах уровня Tier III</figcaption>
+      </figure>
+
+      <h2>Почему выбирают CloudHost</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card__body">
+            <h3>NVMe-диски</h3>
+            <p>Скорость чтения и записи в несколько раз выше классических SSD. Базы данных и сайты открываются мгновенно.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <h3>Защита от DDoS</h3>
+            <p>Фильтрация атак на сетевом и прикладном уровне включена в каждый тариф без дополнительной платы.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <h3>SLA 99,9%</h3>
+            <p>Гарантия доступности закреплена договором. При простое дольше нормы возвращаем деньги за месяц.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <h3>Снапшоты и бэкапы</h3>
+            <p>Полная копия сервера создаётся одним кликом — можно спокойно экспериментировать и откатываться назад.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <h3>Root-доступ</h3>
+            <p>Полный контроль над сервером: ставьте любые панели, языки и фреймворки — ограничений нет.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <h3>Установка за 60 секунд</h3>
+            <p>Сервер разворачивается автоматически после оплаты. Ubuntu, Debian, CentOS или Windows — на выбор.</p>
+          </div>
+        </article>
+      </div>
+
+      <h2>Ведущие облачные платформы</h2>
+      <p>Когда собственного VPS становится недостаточно, бизнес переезжает в публичные облака. Мы подробно рассказываем о двух лидерах рынка.</p>
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card__body">
+            <h3>Amazon Web Services</h3>
+            <p>Крупнейшее облако мира: более 200 сервисов и десятки регионов. Идеально для стартапов и enterprise-нагрузок.</p>
+            <a class="button outline" href="aws.html">Читать обзор AWS</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__body">
+            <h3>Google Cloud Platform</h3>
+            <p>Сильные инструменты аналитики данных и машинного обучения: BigQuery, Vertex AI, Kubernetes Engine.</p>
+            <a class="button outline" href="gcp.html">Читать обзор GCP</a>
+          </div>
+        </article>
+      </div>
+
+      <h2>Видеообзор</h2>
+      <p>Короткое видео о том, как устроен VPS и чем он отличается от обычного хостинга.</p>
+      <div class="video-embed">
+        <iframe src="https://www.youtube.com/embed/KuDwVCDYvKo?si=LoveTNrsesEYZCEW" title="Видео: что такое VPS и чем он отличается от хостинга" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <aside class="col-4 page__sidebar" aria-label="Дополнительная информация">
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <h3>Дайджест CloudHost</h3>
+          <p>Раз в неделю — новости облачных платформ, обзоры тарифов и практические руководства.</p>
+          <form action="#" method="post">
+            <label for="subscribe-email">Ваш email</label>
+            <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
+            <button class="button primary" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <span class="tag">Акция</span>
+          <h3>−30% на первый месяц</h3>
+          <p>Промокод <strong>CLOUD30</strong> при заказе любого тарифа VPS до конца месяца.</p>
+          <a class="button primary" href="vps.html">Выбрать тариф</a>
+        </div>
+      </div>
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <h3>Популярные статьи</h3>
+          <ul class="sidebar__list">
+            <li><a href="blog.html">VPS против выделенного сервера</a></li>
+            <li><a href="blog.html">Auto Scaling в AWS: как это работает</a></li>
+            <li><a href="blog.html">Kubernetes в Google Cloud</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h3>CloudHost</h3>
+        <p>Виртуальные серверы и облачная инфраструктура для бизнеса с 2018 года. Собственное оборудование в дата-центрах уровня Tier III.</p>
+      </div>
+      <div class="footer__col">
+        <h3>Контакты</h3>
+        <ul>
+          <li>Тел.: <a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+          <li>Email: <a href="mailto:info@cloudhost.ru">info@cloudhost.ru</a></li>
+          <li>Москва, ул. Дата-центровая, 1</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Разделы</h3>
+        <ul>
+          <li><a href="vps.html">Тарифы VPS</a></li>
+          <li><a href="cloud.html">Облачные платформы</a></li>
+          <li><a href="faq.html">Вопросы и ответы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; 2026 CloudHost. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

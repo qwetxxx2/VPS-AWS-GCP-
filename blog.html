@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог — CloudHost</title>
+  <meta name="description" content="Блог CloudHost: статьи о VPS, AWS и Google Cloud — переезды, автоскейлинг, Kubernetes и выбор оборудования.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/chota.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Основная навигация">
+    <div class="nav-left">
+      <a class="brand" href="index.html">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+        Cloud<span class="brand__accent">Host</span>
+      </a>
+    </div>
+    <button class="nav__toggle button clear" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Открыть меню">&#9776;</button>
+    <div class="main-menu" id="site-menu">
+      <div class="tabs">
+        <a href="index.html">Главная</a>
+        <a href="vps.html">VPS</a>
+        <a href="cloud.html">Облако</a>
+        <a href="aws.html">AWS</a>
+        <a href="gcp.html">GCP</a>
+        <a href="compare.html">Сравнение</a>
+        <a href="blog.html">Блог</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container page">
+  <div class="row page__layout">
+
+    <section class="col-8 page__content">
+      <h1>Блог о серверах и облаках</h1>
+      <p class="page__lead">Практические статьи от команды CloudHost: переезды, настройка, сравнения платформ и разбор реальных кейсов.</p>
+
+      <div class="cards-grid">
+        <article class="card post-card">
+          <img class="post-card__img" src="img/post-1.webp" alt="Виртуальный сервер рядом с выделенным железом" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="post-card__meta"><time datetime="2026-03-14">14 марта 2026</time> · <span class="tag">VPS</span></p>
+            <h3>VPS или выделенный сервер: что выбрать в 2026 году</h3>
+            <p>Сравниваем цену, производительность и удобство. В большинстве случаев виртуальный сервер выигрывает — объясняем почему.</p>
+            <a href="faq.html">Читать далее →</a>
+          </div>
+        </article>
+        <article class="card post-card">
+          <img class="post-card__img" src="img/post-2.webp" alt="График автоскейлинга нагрузки в AWS" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="post-card__meta"><time datetime="2026-03-07">7 марта 2026</time> · <span class="tag">AWS</span></p>
+            <h3>Auto Scaling в AWS: подстраиваем инфраструктуру под нагрузку</h3>
+            <p>Как настроить группу автоскейлинга, чтобы сайт выдерживал чёрную пятницу без переплаты в спокойные дни.</p>
+            <a href="faq.html">Читать далее →</a>
+          </div>
+        </article>
+        <article class="card post-card">
+          <img class="post-card__img" src="img/post-3.webp" alt="Дашборд аналитики BigQuery" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="post-card__meta"><time datetime="2026-02-28">28 февраля 2026</time> · <span class="tag">GCP</span></p>
+            <h3>BigQuery: аналитика больших данных без своего сервера</h3>
+            <p>Терабайты данных и SQL-запросы за секунды. Разбираемся, как устроено хранилище от Google и сколько это стоит.</p>
+            <a href="faq.html">Читать далее →</a>
+          </div>
+        </article>
+        <article class="card post-card">
+          <img class="post-card__img" src="img/post-4.webp" alt="Ноутбук с терминалом при переезде на VPS" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="post-card__meta"><time datetime="2026-02-20">20 февраля 2026</time> · <span class="tag">VPS</span></p>
+            <h3>Как переехать с хостинга на VPS за один вечер</h3>
+            <p>Пошаговая инструкция: перенос файлов и базы, настройка DNS и проверка сайта — без простоя для посетителей.</p>
+            <a href="faq.html">Читать далее →</a>
+          </div>
+        </article>
+        <article class="card post-card">
+          <img class="post-card__img" src="img/post-5.webp" alt="Контейнеры в кластере Kubernetes" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="post-card__meta"><time datetime="2026-02-11">11 февраля 2026</time> · <span class="tag">GCP</span></p>
+            <h3>Kubernetes для новичков: зачем он нужен</h3>
+            <p>Простыми словами про поды, деплои и оркестрацию. И когда Kubernetes избыточен, а когда без него никуда.</p>
+            <a href="faq.html">Читать далее →</a>
+          </div>
+        </article>
+        <article class="card post-card">
+          <img class="post-card__img" src="img/post-6.webp" alt="NVMe-накопитель крупным планом" width="640" height="360" loading="lazy">
+          <div class="card__body">
+            <p class="post-card__meta"><time datetime="2026-02-02">2 февраля 2026</time> · <span class="tag">Железо</span></p>
+            <h3>NVMe против SSD: стоит ли переплачивать</h3>
+            <p>Тестируем скорость дисков на реальных задачах: базы данных, WordPress и архивирование файлов.</p>
+            <a href="faq.html">Читать далее →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="col-4 page__sidebar" aria-label="Дополнительная информация">
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <h3>Дайджест CloudHost</h3>
+          <p>Раз в неделю — новости облачных платформ, обзоры тарифов и практические руководства.</p>
+          <form action="#" method="post">
+            <label for="subscribe-email">Ваш email</label>
+            <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
+            <button class="button primary" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <span class="tag">Акция</span>
+          <h3>−30% на первый месяц</h3>
+          <p>Промокод <strong>CLOUD30</strong> при заказе любого тарифа VPS до конца месяца.</p>
+          <a class="button primary" href="vps.html">Выбрать тариф</a>
+        </div>
+      </div>
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <h3>Рубрики</h3>
+          <ul class="sidebar__list">
+            <li><span class="tag">VPS</span> — настройка и переезды</li>
+            <li><span class="tag">AWS</span> — сервисы и цены</li>
+            <li><span class="tag">GCP</span> — аналитика и ML</li>
+            <li><span class="tag">Железо</span> — диски и сети</li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h3>CloudHost</h3>
+        <p>Виртуальные серверы и облачная инфраструктура для бизнеса с 2018 года. Собственное оборудование в дата-центрах уровня Tier III.</p>
+      </div>
+      <div class="footer__col">
+        <h3>Контакты</h3>
+        <ul>
+          <li>Тел.: <a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+          <li>Email: <a href="mailto:info@cloudhost.ru">info@cloudhost.ru</a></li>
+          <li>Москва, ул. Дата-центровая, 1</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Разделы</h3>
+        <ul>
+          <li><a href="vps.html">Тарифы VPS</a></li>
+          <li><a href="cloud.html">Облачные платформы</a></li>
+          <li><a href="faq.html">Вопросы и ответы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; 2026 CloudHost. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

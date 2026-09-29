@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Web Services — обзор платформы — CloudHost</title>
+  <meta name="description" content="Обзор Amazon Web Services: история платформы, ключевые сервисы EC2, S3, RDS, Lambda, CloudFront и ориентировочные цены.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/chota.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Основная навигация">
+    <div class="nav-left">
+      <a class="brand" href="index.html">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+        Cloud<span class="brand__accent">Host</span>
+      </a>
+    </div>
+    <button class="nav__toggle button clear" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Открыть меню">&#9776;</button>
+    <div class="main-menu" id="site-menu">
+      <div class="tabs">
+        <a href="index.html">Главная</a>
+        <a href="vps.html">VPS</a>
+        <a href="cloud.html">Облако</a>
+        <a href="aws.html">AWS</a>
+        <a href="gcp.html">GCP</a>
+        <a href="compare.html">Сравнение</a>
+        <a href="blog.html">Блог</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container page">
+  <div class="row page__layout">
+
+    <section class="col-8 page__content">
+      <h1>Amazon Web Services: лидер рынка</h1>
+      <p class="page__lead">Amazon Web Services (AWS) — крупнейшая облачная платформа в мире. Amazon запустил её в 2006 году, и с тех пор AWS вырос в систему из более чем 200 сервисов и 30+ географических регионов.</p>
+
+      <p>AWS начинался с трёх простых сервисов — виртуальных серверов, файлового хранилища и очередей сообщений. Сегодня это экосистема, на которой работают Netflix, Airbnb, NASA и миллионы стартапов. По оценкам аналитиков, на AWS приходится около трети всего мирового рынка публичных облаков.</p>
+
+      <h2>Ключевые сервисы</h2>
+      <ul>
+        <li><strong>EC2 (Elastic Compute Cloud)</strong> — виртуальные серверы с сотнями конфигураций: от крошечных t3.micro до мощных GPU-инстансов для машинного обучения.</li>
+        <li><strong>S3 (Simple Storage Service)</strong> — неограниченное объектное хранилище файлов с гарантией сохранности 99,999999999% (одиннадцать девяток).</li>
+        <li><strong>RDS</strong> — управляемые базы данных MySQL, PostgreSQL, MariaDB: провайдер сам делает бэкапы, обновления и репликацию.</li>
+        <li><strong>Lambda</strong> — бессерверные вычисления: код запускается по событию, а платить нужно только за миллисекунды выполнения.</li>
+        <li><strong>CloudFront</strong> — CDN-сеть доставки контента через сотни точек присутствия по всему миру.</li>
+      </ul>
+
+      <h2>Ориентировочные цены EC2</h2>
+      <p>Стоимость зависит от региона и конфигурации. Ниже — типовые Linux-инстансы по модели on-demand.</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <caption>Цены виртуальных серверов Amazon EC2 (Linux, регион us-east-1)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Инстанс</th>
+              <th scope="col">vCPU</th>
+              <th scope="col">RAM</th>
+              <th scope="col">Цена в час</th>
+              <th scope="col">Цена в месяц</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">t3.micro</th><td>2</td><td>1 ГБ</td><td>$0,0104</td><td>≈ $7,6</td></tr>
+            <tr><th scope="row">t3.small</th><td>2</td><td>2 ГБ</td><td>$0,0208</td><td>≈ $15</td></tr>
+            <tr><th scope="row">t3.medium</th><td>2</td><td>4 ГБ</td><td>$0,0416</td><td>≈ $30</td></tr>
+            <tr><th scope="row">m5.large</th><td>2</td><td>8 ГБ</td><td>$0,096</td><td>≈ $70</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Новым клиентам AWS предоставляет бесплатный тариф Free Tier на 12 месяцев: 750 часов t3.micro в месяц и 5 ГБ в S3.</p>
+    </section>
+
+    <aside class="col-4 page__sidebar" aria-label="Дополнительная информация">
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <h3>Дайджест CloudHost</h3>
+          <p>Раз в неделю — новости облачных платформ, обзоры тарифов и практические руководства.</p>
+          <form action="#" method="post">
+            <label for="subscribe-email">Ваш email</label>
+            <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
+            <button class="button primary" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <span class="tag">Акция</span>
+          <h3>−30% на первый месяц</h3>
+          <p>Промокод <strong>CLOUD30</strong> при заказе любого тарифа VPS до конца месяца.</p>
+          <a class="button primary" href="vps.html">Выбрать тариф</a>
+        </div>
+      </div>
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <h3>Популярные статьи</h3>
+          <ul class="sidebar__list">
+            <li><a href="blog.html">VPS против выделенного сервера</a></li>
+            <li><a href="blog.html">Auto Scaling в AWS: как это работает</a></li>
+            <li><a href="blog.html">Kubernetes в Google Cloud</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h3>CloudHost</h3>
+        <p>Виртуальные серверы и облачная инфраструктура для бизнеса с 2018 года. Собственное оборудование в дата-центрах уровня Tier III.</p>
+      </div>
+      <div class="footer__col">
+        <h3>Контакты</h3>
+        <ul>
+          <li>Тел.: <a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+          <li>Email: <a href="mailto:info@cloudhost.ru">info@cloudhost.ru</a></li>
+          <li>Москва, ул. Дата-центровая, 1</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Разделы</h3>
+        <ul>
+          <li><a href="vps.html">Тарифы VPS</a></li>
+          <li><a href="cloud.html">Облачные платформы</a></li>
+          <li><a href="faq.html">Вопросы и ответы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; 2026 CloudHost. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

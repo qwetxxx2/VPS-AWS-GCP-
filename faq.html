@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вопросы и ответы — CloudHost</title>
+  <meta name="description" content="Ответы на частые вопросы о VPS, SLA, снапшотах и облачных платформах AWS и Google Cloud.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/chota.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container" aria-label="Основная навигация">
+    <div class="nav-left">
+      <a class="brand" href="index.html">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/></svg>
+        Cloud<span class="brand__accent">Host</span>
+      </a>
+    </div>
+    <button class="nav__toggle button clear" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Открыть меню">&#9776;</button>
+    <div class="main-menu" id="site-menu">
+      <div class="tabs">
+        <a href="index.html">Главная</a>
+        <a href="vps.html">VPS</a>
+        <a href="cloud.html">Облако</a>
+        <a href="aws.html">AWS</a>
+        <a href="gcp.html">GCP</a>
+        <a href="compare.html">Сравнение</a>
+        <a href="blog.html">Блог</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container page">
+  <div class="row page__layout">
+
+    <section class="col-8 page__content">
+      <h1>Вопросы и ответы</h1>
+      <p class="page__lead">Собрали ответы на самые частые вопросы о виртуальных серверах и облаках. Нажмите на вопрос, чтобы раскрыть ответ.</p>
+
+      <div class="faq">
+        <details>
+          <summary>Чем VPS отличается от виртуального хостинга?</summary>
+          <p>На хостинге вы делите один сервер с сотнями других сайтов и не имеете доступа к системе. VPS — изолированная виртуальная машина с гарантированными ресурсами и root-доступом: можно ставить любое ПО, менять настройки PHP и держать несколько сайтов.</p>
+        </details>
+        <details>
+          <summary>Нужен ли VPS для небольшого сайта?</summary>
+          <p>Если у вас лендинг или визитка до 1000 посетителей в день, хватит и хостинга. VPS нужен, когда есть нагрузка, специфическое ПО или требования к изоляции. Тариф START за 300 ₽/мес закрывает большинство типовых задач.</p>
+        </details>
+        <details>
+          <summary>Что такое SLA 99,9%?</summary>
+          <p>Это договорная гарантия доступности: суммарный простой сервера не должен превышать примерно 43 минуты в месяц. Если мы нарушаем SLA, вы получаете компенсацию — возврат части оплаты за месяц.</p>
+        </details>
+        <details>
+          <summary>Можно ли сменить тариф после заказа?</summary>
+          <p>Да, переход на другой тариф занимает несколько минут и происходит без переустановки системы. При увеличении тарифа доплачивается только разница за остаток месяца.</p>
+        </details>
+        <details>
+          <summary>Какие операционные системы доступны?</summary>
+          <p>Ubuntu, Debian, AlmaLinux, Rocky Linux и Windows Server. Образ разворачивается автоматически, а из готовых шаблонов можно установить WordPress, Bitrix или Docker одним кликом.</p>
+        </details>
+        <details>
+          <summary>Что такое снапшот и зачем он нужен?</summary>
+          <p>Снапшот — «фотография» состояния сервера в конкретный момент: диска, памяти и настроек. Перед рискованным обновлением сделайте снапшот — и в случае ошибки откатитесь назад за пару минут.</p>
+        </details>
+        <details>
+          <summary>Чем AWS отличается от Google Cloud?</summary>
+          <p>AWS — самое большое облако с сотнями сервисов, оно подойдёт сложным проектам с непредсказуемым ростом. GCP сильнее в аналитике данных и машинном обучении, а ещё даёт посекундную тарификацию. Подробное сравнение — на странице <a href="compare.html">«Сравнение»</a>.</p>
+        </details>
+        <details>
+          <summary>Есть ли бесплатный период у облачных платформ?</summary>
+          <p>Да. AWS предоставляет Free Tier на 12 месяцев (750 часов микроинстанса в месяц), а Google Cloud начисляет $300 на 90 дней. Этого достаточно, чтобы изучить платформы без затрат.</p>
+        </details>
+      </div>
+
+      <h2>Не нашли ответ?</h2>
+      <ol class="steps">
+        <li>Загляните в <a href="blog.html">блог</a> — там подробные инструкции с картинками.</li>
+        <li>Напишите в поддержку через форму на странице <a href="contacts.html">«Контакты»</a>.</li>
+        <li>Позвоните нам: <a href="tel:+79000000000">+7 (900) 000-00-00</a>, отвечаем с 9:00 до 21:00.</li>
+      </ol>
+    </section>
+
+    <aside class="col-4 page__sidebar" aria-label="Дополнительная информация">
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <h3>Дайджест CloudHost</h3>
+          <p>Раз в неделю — новости облачных платформ, обзоры тарифов и практические руководства.</p>
+          <form action="#" method="post">
+            <label for="subscribe-email">Ваш email</label>
+            <input type="email" id="subscribe-email" name="email" placeholder="you@example.com" required>
+            <button class="button primary" type="submit">Подписаться</button>
+          </form>
+        </div>
+      </div>
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <span class="tag">Акция</span>
+          <h3>−30% на первый месяц</h3>
+          <p>Промокод <strong>CLOUD30</strong> при заказе любого тарифа VPS до конца месяца.</p>
+          <a class="button primary" href="vps.html">Выбрать тариф</a>
+        </div>
+      </div>
+      <div class="card sidebar__block">
+        <div class="card__body">
+          <h3>Популярные статьи</h3>
+          <ul class="sidebar__list">
+            <li><a href="blog.html">VPS против выделенного сервера</a></li>
+            <li><a href="blog.html">Auto Scaling в AWS: как это работает</a></li>
+            <li><a href="blog.html">Kubernetes в Google Cloud</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col">
+        <h3>CloudHost</h3>
+        <p>Виртуальные серверы и облачная инфраструктура для бизнеса с 2018 года. Собственное оборудование в дата-центрах уровня Tier III.</p>
+      </div>
+      <div class="footer__col">
+        <h3>Контакты</h3>
+        <ul>
+          <li>Тел.: <a href="tel:+79000000000">+7 (900) 000-00-00</a></li>
+          <li>Email: <a href="mailto:info@cloudhost.ru">info@cloudhost.ru</a></li>
+          <li>Москва, ул. Дата-центровая, 1</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h3>Разделы</h3>
+        <ul>
+          <li><a href="vps.html">Тарифы VPS</a></li>
+          <li><a href="cloud.html">Облачные платформы</a></li>
+          <li><a href="faq.html">Вопросы и ответы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer__copy">&copy; 2026 CloudHost. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
