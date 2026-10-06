@@ -692,4 +692,8 @@ main.page .page__layout > * {
   main.page .page__layout {
     grid-template-columns: minmax(0, 1fr) 340px;
   }
+  aside {
+    position: sticky;
+    top: 75px;
+  }
   }
