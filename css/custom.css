@@ -667,3 +667,29 @@ input, select, textarea { font-size: 1.05rem; }
 @media (min-width: 768px) {
   .main-menu .tabs a { font-size: 1.25rem; padding: .5rem .7rem; }
 }
+main.page .page__layout {
+  display: grid !important;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+main.page .page__layout > * {
+  flex: none;
+  width: auto;
+  max-width: none;
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  main.page .page__layout {
+    grid-template-columns: minmax(0, 1fr) 280px;
+  }
+}
+
+@media (min-width: 992px) {
+  main.page .page__layout {
+    grid-template-columns: minmax(0, 1fr) 340px;
+  }
+  }
